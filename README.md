@@ -225,11 +225,12 @@ Once the containers are running, access the services:
 
 - **Frontend**: http://localhost:3000
 - **Backend API**: http://localhost:5000
-- **Grafana Dashboard**: http://localhost:3001 (credentials: admin/admin)
-- **Prometheus**: http://localhost:9090
 
 > [!NOTE]
 > The first startup may take a few minutes as Docker downloads base images and installs dependencies.
+
+> [!NOTE]
+> The monitoring services (Prometheus and Grafana) are commented out in the docker-compose files by default. To enable them, uncomment the monitoring sections in `docker-compose.yml`.
 
 ---
 
@@ -488,13 +489,14 @@ ssh root@<vps-ip>
 docker ps
 
 # Expected output should show containers for:
-# - frontend (port 3000)
+# - frontend (port 57002 mapped to 3000)
 # - backend (port 5000)
-# - prometheus (port 9090)
-# - grafana (port 3001)
 ```
 
 **What this does**: Lists all running Docker containers to ensure the deployment was successful.
+
+> [!NOTE]
+> The monitoring services (Prometheus and Grafana) are commented out by default. If you enabled them in your docker-compose.yml, you'll also see those containers.
 
 ### Step 2: View Container Logs
 
@@ -530,13 +532,15 @@ curl https://your-domain.com/metrics
 
 **What this does**: Verifies that the application is accessible via HTTPS and the API endpoints are responding correctly.
 
-### Step 4: Access Monitoring Stack
+### Step 4: Access Monitoring Stack (Optional)
+
+If you enabled the monitoring services in docker-compose.yml:
 
 - **Grafana Dashboard**: `http://<vps-ip>:3001` (credentials: admin/admin)
 - **Prometheus Metrics**: `http://<vps-ip>:9090`
 
 > [!NOTE]
-> If you cannot access these services, check your firewall rules and ensure the ports are open.
+> The monitoring services are commented out by default. To enable them, uncomment the prometheus and grafana sections in `docker-compose.yml` and redeploy.
 
 ---
 
@@ -581,7 +585,14 @@ curl https://your-domain.com/metrics
 
 ## Monitoring Stack
 
-The project includes a pre-configured monitoring stack for observability.
+The project includes a pre-configured monitoring stack for observability (currently commented out by default).
+
+### Enabling Monitoring
+
+To enable Prometheus and Grafana monitoring:
+
+1. Uncomment the `prometheus` and `grafana` services in `docker-compose.yml`
+2. Redeploy the application with `docker compose up -d`
 
 ### Prometheus
 
