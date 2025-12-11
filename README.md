@@ -217,7 +217,7 @@ Start all services using Docker Compose for local testing:
 docker compose -f docker-compose.local.yml up --build
 ```
 
-> The `--build` flag rebuilds images to include any local changes. The local compose file uses volume mounts for hot-reloading during development.
+> The `--build` flag rebuilds images to include any local changes. This command starts the frontend and backend services in containers for testing.
 
 ### Step 3: Access the Application
 
@@ -522,10 +522,10 @@ Test the application from your local machine:
 curl -I https://your-domain.com
 
 # Test backend API
-curl https://your-domain.com/api/health
+curl https://your-domain.com/api/data
 
 # Test backend metrics
-curl https://your-domain.com/api/metrics
+curl https://your-domain.com/metrics
 ```
 
 **What this does**: Verifies that the application is accessible via HTTPS and the API endpoints are responding correctly.
@@ -587,7 +587,7 @@ The project includes a pre-configured monitoring stack for observability.
 
 - **URL**: `http://<vps-ip>:9090`
 - **Configuration**: `monitoring/prometheus.yml`
-- **Metrics Endpoint**: Backend exposes metrics at `/api/metrics`
+- **Metrics Endpoint**: Backend exposes metrics at `/metrics`
 - **Targets**: Monitors backend Flask application
 
 ### Grafana
