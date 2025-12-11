@@ -655,8 +655,8 @@ docker ps | grep backend
 # Check backend logs for errors
 docker logs devops-project-2-backend-1
 
-# Check backend health endpoint
-curl http://localhost:5000/api/health
+# Check backend API endpoint
+curl http://localhost:5000/api/data
 
 # Restart containers if needed
 cd ~/devops-project-2
