@@ -204,7 +204,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword`}
                             <ul className="list-disc list-inside text-gray-400 space-y-1 ml-4 mb-3 sm:mb-4 text-xs sm:text-sm">
                                 <li><strong>Type:</strong> Pipeline</li>
                                 <li><strong>Script Path:</strong> <code>Jenkinsfile</code></li>
-                                <li><strong>Repo URL:</strong> <code>https://github.com/HimanM/DevOps-Project-2.git</code></li>
+                                <li><strong>Repo URL:</strong> <code>https://github.com/HimanM/jenkins-chained-cicd-infra-automation.git</code></li>
                             </ul>
                             <div className="rounded-xl overflow-hidden border border-gray-800">
                                 <MagnifiedImage

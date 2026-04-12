@@ -47,7 +47,7 @@ This project is built for **learning DevOps** through hands-on experience with i
 - Implementing monitoring with Prometheus and Grafana
 
 **Live Demo:** [https://devops2.himanmanduja.fun](https://devops2.himanmanduja.fun)  
-**GitHub Repository:** [https://github.com/HimanM/DevOps-Project-2](https://github.com/HimanM/DevOps-Project-2)  
+**GitHub Repository:** [https://github.com/HimanM/jenkins-chained-cicd-infra-automation](https://github.com/HimanM/jenkins-chained-cicd-infra-automation)  
 **Docker Hub:**
 - Frontend: [himanm/devops-project-2-frontend](https://hub.docker.com/r/himanm/devops-project-2-frontend)
 - Backend: [himanm/devops-project-2-backend](https://hub.docker.com/r/himanm/devops-project-2-backend)
@@ -203,8 +203,8 @@ Follow these steps to clone and replicate this project on your local machine or 
 First, clone the repository from GitHub to your local machine:
 
 ```bash
-git clone https://github.com/HimanM/DevOps-Project-2.git
-cd DevOps-Project-2
+git clone https://github.com/HimanM/jenkins-chained-cicd-infra-automation.git
+cd jenkins-chained-cicd-infra-automation
 ```
 
 > This command downloads the entire project including all source code, Dockerfiles, Jenkinsfiles, and Ansible playbooks.
@@ -381,7 +381,7 @@ Create the Continuous Integration pipeline that builds and publishes Docker imag
 4. Under **Pipeline** section:
    - **Definition**: Pipeline script from SCM
    - **SCM**: Git
-   - **Repository URL**: `https://github.com/HimanM/DevOps-Project-2.git` (or your fork)
+   - **Repository URL**: `https://github.com/HimanM/jenkins-chained-cicd-infra-automation.git` (or your fork)
    - **Branch**: `*/main`
    - **Script Path**: `Jenkinsfile`
 5. Click **Save**
@@ -404,7 +404,7 @@ Create the Continuous Deployment pipeline that deploys to your VPS:
 5. Under **Pipeline** section:
    - **Definition**: Pipeline script from SCM
    - **SCM**: Git
-   - **Repository URL**: `https://github.com/HimanM/DevOps-Project-2.git` (or your fork)
+   - **Repository URL**: `https://github.com/HimanM/jenkins-chained-cicd-infra-automation.git` (or your fork)
    - **Branch**: `*/main`
    - **Script Path**: `Jenkinsfile.deploy`
 6. Click **Save**
@@ -423,7 +423,7 @@ Create the Infrastructure as Code pipeline for Nginx and SSL setup:
 4. Under **Pipeline** section:
    - **Definition**: Pipeline script from SCM
    - **SCM**: Git
-   - **Repository URL**: `https://github.com/HimanM/DevOps-Project-2.git` (or your fork)
+   - **Repository URL**: `https://github.com/HimanM/jenkins-chained-cicd-infra-automation.git` (or your fork)
    - **Branch**: `*/main`
    - **Script Path**: `Jenkinsfile.initdomain`
 5. Click **Save**
@@ -757,13 +757,13 @@ This project is intended for educational and learning purposes. It demonstrates 
 
 **Name**: Himan Manduja  
 **GitHub**: [@HimanM](https://github.com/HimanM)  
-**Repository**: [github.com/HimanM/DevOps-Project-2](https://github.com/HimanM/DevOps-Project-2)  
+**Repository**: [github.com/HimanM/jenkins-chained-cicd-infra-automation](https://github.com/HimanM/jenkins-chained-cicd-infra-automation)  
 **Live Demo**: [devops2.himanmanduja.fun](https://devops2.himanmanduja.fun)
 
 ### Contact
 
 For questions, suggestions, or collaboration opportunities:
-- **GitHub Issues**: [Open an issue](https://github.com/HimanM/DevOps-Project-2/issues)
+- **GitHub Issues**: [Open an issue](https://github.com/HimanM/jenkins-chained-cicd-infra-automation/issues)
 - **Email**: Contact via GitHub profile
 
 ### Contributing

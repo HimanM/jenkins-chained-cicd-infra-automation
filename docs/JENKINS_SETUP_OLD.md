@@ -84,7 +84,7 @@ Here is how your Jenkins Dashboard should look with the project folder:
 1.  **New Item** -> **Pipeline** -> Name it `DevOps-CI`.
 2.  **Definition**: Pipeline script from SCM.
 3.  **SCM**: Git.
-4.  **Repository URL**: `https://github.com/HimanM/DevOps-Project-2.git`.
+4.  **Repository URL**: `https://github.com/HimanM/jenkins-chained-cicd-infra-automation.git`.
 5.  **Script Path**: `Jenkinsfile`.
 
 **Configuration View:**
@@ -107,7 +107,7 @@ The stages are:
 1.  **New Item** -> **Pipeline** -> Name it `DevOps-CD`.
 2.  **Definition**: Pipeline script from SCM.
 3.  **SCM**: Git.
-4.  **Repository URL**: `https://github.com/HimanM/DevOps-Project-2.git`.
+4.  **Repository URL**: `https://github.com/HimanM/jenkins-chained-cicd-infra-automation.git`.
 5.  **Script Path**: `Jenkinsfile.deploy`.
 
 **Configuration View:**
@@ -121,7 +121,7 @@ The stages are:
 1.  **New Item** -> **Pipeline** -> Name it `DevOps-InitDomain`.
 2.  **Definition**: Pipeline script from SCM.
 3.  **SCM**: Git.
-4.  **Repository URL**: `https://github.com/HimanM/DevOps-Project-2.git`.
+4.  **Repository URL**: `https://github.com/HimanM/jenkins-chained-cicd-infra-automation.git`.
 5.  **Script Path**: `Jenkinsfile.initdomain`.
 
 **Configuration View:**
