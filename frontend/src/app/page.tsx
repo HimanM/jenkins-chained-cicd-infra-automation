@@ -35,7 +35,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4 mb-6 sm:mb-8 px-4">
             <a
-              href="https://github.com/HimanM/DevOps-Project-2"
+              href="https://github.com/HimanM/jenkins-chained-cicd-infra-automation"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-6 sm:px-8 py-3 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition-colors flex items-center justify-center gap-2 text-sm sm:text-base"
