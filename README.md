@@ -1,3 +1,9 @@
+<!-- BANNER_START -->
+<p align="center">
+  <img src="./.banner/banner.svg" width="100%" alt="Project Banner">
+</p>
+<!-- BANNER_END -->
+
 # DevOps Project 2
 
 > Full-Stack Web Application with Automated CI/CD Pipeline and Infrastructure as Code
